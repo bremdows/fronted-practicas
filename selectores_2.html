@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        div p{
+            color: burlywood;
+        }
+        div > a{
+            color: coral;
+        }
+        div + span{
+            background: red;
+        }
+        /* Selecciona todos los hermanos que esten despues del elemento */
+        div ~ span{ 
+            background: blue;
+        }
+    </style>
+    <title>Selectores combinados</title>
+</head>
+<body>
+    <span>  Adyente por arriba </span>
+    <div>
+        <p> No me cambies el color</p>
+        <a href="#">Soy hijo directo de un div</a>
+        <nav>
+            <a href="#"> No soy un hijo indirecto del div</a>
+        </nav>
+    </div>
+    <span>Soy un elemento adyacente al div</span>
+    <span>Soy un elemento adyacente</span>
+    <p>Soy un parrafo sin un div como cajita padre o contenedor</p>
+</body>
+</html>
