@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        p{
+            color: salmon;
+            font-size: 40px;
+        }
+        p:hover{
+            color: cadetblue;
+        }
+        div p:nth-child(2){
+            font-size: 25px;
+            color:violet;
+        }
+        div p:first-child{
+            font-size: 14px;
+        }
+        p::first-letter{
+            color: teal;
+        }
+        p::before{
+            content: "⭐";
+        }
+        p::after{
+            content: "🐧";
+        }
+        /* Cambia el color del placeholder */
+        ::placeholder{
+            color: tomato;
+        }
+        article p{
+            font-size: 16px;
+            color: black;
+        }
+        article p::first-line{
+            color: red;
+        }
+        ::selection{
+            background: seagreen;
+            color: white;
+        }
+        /* even: pares */
+        blockquote p{
+            color: white;
+        }
+        blockquote p:nth-child(even){
+            background: green;
+        }
+        blockquote p:nth-child(odd){
+            background-color: blue;
+        }
+    </style>
+    <title>Pseudo Clases y pseudoelementos</title>
+</head>
+<body>
+    <p> Probando el hover </p>
+    <div>
+        <p> Platzi </p>
+        <p> Master </p>
+        <p> Grandes Cursos </p>
+    </div>
+    <article>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore ducimus nam accusantium aut quae illo magnam quidem deserunt laborum qui. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestiae, deserunt!</p>
+    </article>
+
+    <h2>Pseudoelementos</h2>
+
+    <section>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio eaque a fugit cumque deleniti sequi ut blanditiis, nemo odio, odit earum. Fuga nihil consequuntur vel minima? Officia quae consequatur quibusdam libero commodi sint odio ab! Illum quod voluptates rem dolorum cupiditate tempore nam sequi qui?</p>
+    </section>
+
+    <blockquote>
+        <p>lorem 1</p>
+        <p>lorem 2</p>
+        <p>lorem 3</p>
+        <p>lorem 4</p>
+        <p>lorem 5</p>
+        <p>lorem 6</p>
+    </blockquote>
+
+    <input type="text" placeholder="Ingresa tu nombre">
+    
+</body>
+</html>
