@@ -4,26 +4,142 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;700&display=swap" rel="stylesheet">
     <title>Practice Card</title>
     <style>
+        body{
+            font: normal 16px "Raleway", Arial, Helvetica, sans-serif;
+        }
+        a{
+            text-decoration: none;
+            color: white;
+        }
+        .text-center{
+            text-align: center;
+            display: block;
+        }
+        body{
+            background: linear-gradient(to left, rgba(55, 62, 70, 1), rgba(28, 32, 41, 1));
+        }
         .contenedor{
             width: 80%;
             margin: 0 auto;
             display: flex;
             justify-content: center;
             align-items: center;
-            background: ;
+            padding: 20px;
+        }
+        .contenedor .card{
+            border-radius: 40px;
+            width: 300px;
+            overflow: hidden;
+        }
+        .card .main{
+            background: linear-gradient(to bottom, #3E97EA, #4852EB);
+            padding: 20px;
+            position: relative;
+        }
+        .card .main .header{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: white;
+            margin-bottom: 40px;
+        }
+        .card .main .header .button-home{
+            background: #292F3F;
+            width: 35px;
+            height: 35px;
+            border-radius: 50%;
+            text-align: center;
+            line-height: 33px;
+            color: #5A616F;
+        }
+        .card .main .descripcion{
+            margin-bottom: 50px;
+            color: #D6E2F0;
+        }
+        .card .main .descripcion h4{
+            margin-bottom: 10px;
+        }
+        .card .main .descripcion *{
+            margin: 0;
+        }
+        .content-img{
+            position: absolute;
+            transform: rotate(270deg);
+            width: 280px;
+            top: 51%;
+            left: 25%
+        }
+        .content-img img{
+            width: 100%;    
         }
     </style>
 </head>
 <body>
     <main class="contenedor">
-        <div class="card">
-
-        </div>
+        <section class="card">
+            <div class="main">
+                <div class="header">
+                    <span><i class="fa-solid fa-arrow-left-long"></i> </span>
+                    <a href="#" class="button-home"> <i class="fa-solid fa-cart-shopping"></i> </a>
+                </div>
+                <div class="descripcion">
+                    <h4>PLATFORM</h4>
+                    <span>PS5</span>
+                </div>
+                <div class="descripcion">
+                    <h4>RELEASE</h4>
+                    <span>Fall 2022</span>
+                </div>
+                <div class="descripcion">
+                    <h4>PRICE</h4>
+                    <span>$ 50</span>
+                </div>
+                <div class="content-img">
+                    <img src="./images/ps5.png" alt="Controls del ps5">
+                </div>
+            </div>
+            <article class="contenido">
+                <h2>Dual Sense</h2>
+                <p>
+                    DualSense also adds a build-in microphone array, which will enable players to easily chat with friends without a headset...
+                </p>
+                <div class="grid-container">
+                    <div class="item item-1">
+                        <div class="image"></div>
+                        <h4>Futuristic</h4>
+                        <span>Design</span>
+                    </div>
+                    <div class="item item-2">
+                        <div class="image"></div>
+                        <h4>Built-in</h4>
+                        <span>Microphone</span>
+                    </div>
+                    <div class="item item-3">
+                        <div class="image"></div>
+                        <h4>Haptic</h4>
+                        <span>Feedback</span>
+                    </div>
+                    <div class="item item-4">
+                        <div class="image"></div>
+                        <h4>Fast Change</h4>
+                        <span>USB-C port</span>
+                    </div>
+                    <footer class="price">
+                        <a href="" class="price"><span>$</span> 50</a>
+                        <a href="" class="button-buy">Preorder <span><i class="fa-solid fa-arrow-right-long"></i></span></a>
+                    </footer>
+                </div>
+            </article>
+        </section>
     </main>
 
     <!-- Reference -->
-    https://freefrontend.com/assets/img/css-cards/ui-design-product.png
+    <a class="text-center" href="https://freefrontend.com/assets/img/css-cards/ui-design-product.png" target="_blank"> Referencia que se tomo en cuenta para el desarrollo</a>
+    <script src="https://kit.fontawesome.com/69b5ee1732.js" crossorigin="anonymous"></script>
 </body>
 </html>
