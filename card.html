@@ -33,7 +33,7 @@
         }
         .contenedor .card{
             border-radius: 40px;
-            width: 300px;
+            width: 350px;
             overflow: hidden;
         }
         .card .main{
@@ -70,12 +70,84 @@
         .content-img{
             position: absolute;
             transform: rotate(270deg);
-            width: 280px;
+            width: 290px;
             top: 51%;
-            left: 25%
+            left: 33%;
         }
         .content-img img{
             width: 100%;    
+        }
+        .contenido{
+            background: linear-gradient(0deg, #19202D, #242B3B);
+            padding: 20px;
+            color: white;
+        }
+        .contenido h2{
+            margin: 0;
+            margin-bottom: 20px;
+            font-size: 35px;
+        }
+        .contenido .grid-container{
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            row-gap: 20px;
+            margin-bottom: 30px;
+        }
+        .contenido .grid-container .item{
+            display: flex;
+        }
+        .contenido .grid-container .item .image{
+            width: 40px;
+            height: 40px;
+            border-radius: 10px;
+            background: linear-gradient(to right, #2C3245, #19202D);
+            margin-right: 20px;
+        }
+        .contenido .grid-container .item h4{
+            margin: 0;
+        }
+        .contenido p{
+            margin-bottom: 30px;
+        }
+        /* 
+            FOOTER
+         */
+        footer{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: linear-gradient(to right, #31374C, #111823);
+            border-radius: 7px;
+            padding: 15px;
+        }
+        footer .price{
+            font-size: 25px;
+        }
+        footer .price span{
+            color: #4184C4;
+            font-size: 20px;
+        }
+        footer .button-buy{
+            background: linear-gradient(to right, #5FBAF1, #493AFB);
+            padding: 10px 15px 10px 15px;
+            border-radius: 7px;
+            font-size: 14px;
+        }
+        footer .button-buy span{
+            position: relative;
+            padding-left: 10px;
+            margin-left: 10px;
+        }
+        footer .button-buy span::before{
+            content:'';
+            position: absolute;
+            left: 0;
+            top: -10px;
+            bottom: 0;
+            right: 0;
+            height: 36px;
+            width: 1px;
+            background: #3943BA;
         }
     </style>
 </head>
@@ -111,29 +183,41 @@
                 <div class="grid-container">
                     <div class="item item-1">
                         <div class="image"></div>
-                        <h4>Futuristic</h4>
-                        <span>Design</span>
+                        <div class="text">
+                            <h4>Futuristic</h4>
+                            <span>Design</span>
+                        </div>
                     </div>
                     <div class="item item-2">
                         <div class="image"></div>
-                        <h4>Built-in</h4>
-                        <span>Microphone</span>
+                        <div class="text">
+                            <h4>Built-in</h4>
+                            <span>Microphone</span>
+                        </div>
                     </div>
                     <div class="item item-3">
                         <div class="image"></div>
-                        <h4>Haptic</h4>
-                        <span>Feedback</span>
+                        <div class="text">
+                            <h4>Haptic</h4>
+                            <span>Feedback</span>
+                        </div>
                     </div>
                     <div class="item item-4">
                         <div class="image"></div>
-                        <h4>Fast Change</h4>
-                        <span>USB-C port</span>
+                        <div class="text">
+                            <h4>Fast Change</h4>
+                            <span>USB-C port</span>
+                        </div>
                     </div>
-                    <footer class="price">
-                        <a href="" class="price"><span>$</span> 50</a>
-                        <a href="" class="button-buy">Preorder <span><i class="fa-solid fa-arrow-right-long"></i></span></a>
-                    </footer>
                 </div>
+                <footer class="">
+                    <a href="" class="price">
+                        <span>$</span> 50
+                    </a>
+                    <a href="" class="button-buy">Preorder
+                        <span><i class="fa-solid fa-arrow-right-long"></i></span>
+                    </a>
+                </footer>
             </article>
         </section>
     </main>
