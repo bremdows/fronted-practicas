@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Design</title>
+    <style>
+        div{
+            background: purple;
+        }
+        @media (min-width: 300px){
+            /* Cambia el el bg cuando en ancho de pantalla es mayor igual a 300px */
+            div{
+                background: royalblue;
+            }
+        }
+        
+        p{
+            color: teal;
+        }
+        @media (max-width: 450px){
+            /* Cambiar el color del parrafo cuando el ancho menor igual a 450px */
+            p{
+                color: papayawhip;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div>
+        Platzi
+        <p>
+            Una gran plataforma para estudiar
+        </p>
+    </div>
+</body>
+</html>
